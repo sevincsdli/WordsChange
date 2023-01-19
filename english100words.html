@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 words</title>
+    <style>
+        button{
+            border:none;
+            border-radius:1rem;
+            background: linear-gradient(to right,pink,rgb(218, 115, 132));
+            color:white;
+            font-size:1.2rem;
+            padding:1rem 2rem;
+            margin-left:35rem;
+            margin-top: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="random();">
+CLICK ME
+    </button>
+
+    <p id="demo"></p>
+    <script>
+function random(){
+let array=["word1","word2","word3","word4","word5","word6","word7","word8","word9","word10"];
+let colors=["green","aqua","red","purple","orange","tomato","blue","#def4af"];
+let body=document.body;
+
+let ranNum=Math.floor(Math.random()*10);
+
+document.getElementById('demo').innerHTML=array[ranNum];
+document.getElementById('demo').style.color="pink";
+document.getElementById('demo').style.fontSize="2rem";
+document.getElementById('demo').style.textAlign="center";
+
+body.style.background=colors[ranNum];
+
+}
+
+
+    </script>
+</body>
+</html>
